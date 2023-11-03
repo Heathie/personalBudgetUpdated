@@ -1,10 +1,10 @@
-{% extends "base.html" %}
+{{ include('header.html') }}
+<div class="body-bgimage">
 
-{% block title %}Home{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
-
-  <h1>Welcome</h1>
+<!--
 
   {% if current_user %}
   Hello {{ current_user.name }}.
@@ -12,4 +12,45 @@
     <a href="/signup/new">Sign up</a> or <a href="/login">Log in</a>.
     {% endif %}
 
-  {% endblock %}
+-->
+<section id="title">
+  <div class="container-fluid">
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col-lg-7">
+        <h1 class="big-heading">PersonalBudget</h1>
+        <h5 class="quote">
+          „Zrobić budżet to wskazać swoim pieniądzom, dokąd mają iść,
+          zamiast się zastanawiać, gdzie się rozeszły”
+        </h5>
+        <h5 class="person-quoted">– John C. Maxwell.</h5>
+        <h3 class="title-text">
+          Czy zdarzyło Ci się kiedykolwiek poczuć zdezorientowanym lub
+          zagubionym w świecie finansów? Nie wiesz, gdzie Twoje pieniądze
+          się podziały i zawsze brakuje Ci na końcu miesiąca? Może czas
+          zacząć kontrolować swoje wydatki? Jeśli chcesz poprawić swoją
+          sytuację finansową i zacząć oszczędzać, warto pomyśleć o
+          zainstalowaniu aplikacji do tworzenia budżetu domowego. Dzięki
+          niej będziesz mógł łatwo śledzić swoje wydatki, kontrolować swoje
+          przychody, a także planować na przyszłość. Bez względu na to, czy
+          jesteś studentem, pracownikiem czy przedsiębiorcą, korzystanie z
+          aplikacji do tworzenia budżetu domowego może pomóc Ci w
+          osiągnięciu finansowej stabilizacji. Zainstaluj taką aplikację już
+          dziś i zacznij planować swoją przyszłość finansową!
+        </h3>
+        <div class="d-grid gap-2 d-md-block button-div">
+          <a class="btn btn-dark btn-lg signup-button" href="/signup/new" role="button"><i class="fa-solid fa-user-plus"></i> Zarejestruj się</a>
+          
+          <a class="btn btn-outline-dark btn-lg signin-button" href="/login" role="button"><i class="fa-solid fa-right-to-bracket"></i> Zaloguj się</a>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+{% endblock %}
+
+
+  {{ include('footer.html') }}

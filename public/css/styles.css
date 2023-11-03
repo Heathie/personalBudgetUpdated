@@ -1,3 +1,251 @@
 body {
-  margin-top: 3em;
+  background-color: #d4dce3;
+  overflow-x: hidden;
 }
+
+/* Title */
+.body-bgimage {
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+}
+
+.big-heading {
+  font-size: 6rem;
+  margin: 60px 30px 20px;
+}
+
+.quote {
+  margin: 0 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.person-quoted {
+  margin: 0 30px;
+  text-align: left;
+}
+
+.signup-button {
+  margin: 30px;
+}
+
+.signin-button {
+  margin: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.title-text {
+  margin: 50px 30px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+  /* Signin-Site */
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #212529;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.brand-name:hover {
+  color: #212529;
+}
+
+  .form-signin {
+    max-width: 530px;
+    padding: 70px 15px;
+    height: 100vh;
+}
+
+.nav-signin {
+  padding: 2rem 0 2rem 2rem;
+}
+
+.signin-div {
+  background-color: rgb(255, 255, 255, .5);
+  padding: 2rem 0;
+}
+
+.signin-form-box {
+  margin: 50px;
+}
+
+/* Signup-site */
+
+.btn-signup {
+  margin-top: 2rem;
+}
+
+.form-signup {
+  max-width: 530px;
+  padding: 70px 15px;
+  height: 100vh;
+}
+
+.nav-signup {
+  padding: 2rem 0 2rem 2rem;
+}
+
+.signup-div {
+  background-color: rgb(255, 255, 255, .5);
+  padding: 2rem 0;
+}
+
+.signup-form-box {
+  margin: 50px;
+}
+
+/* Main site */
+
+.chart-img {
+  max-width: calc(100% - 4rem);
+  position: absolute;
+  left: 1.5rem;
+}
+
+
+.main-table, .expenses-table {
+  border: solid;
+}
+
+.expenses-table {
+  border-left: none;
+  border-bottom: none;
+  padding: 12px;
+
+}
+
+.graph-holder {
+  position: relative;
+}
+
+.incomes-table, .main-table {
+  border-top: solid;
+}
+
+.incomes-table {
+  padding: 12px;
+}
+
+.border-main {
+  border-color: #212529;
+}
+
+.logged-as {
+  align-self: flex-start;
+  white-space: nowrap;
+  padding: 0 12px;
+}
+
+.main-div {
+  max-width: 1200px;
+  padding: 70px 15px;
+  height: 100vh;
+}
+
+.nav-main {
+  padding: 2rem 0 2rem 2rem;
+  flex-direction: column;
+}
+
+.row-main {
+  margin-left: 1rem;
+}
+
+/* Expenses site */
+
+.btn-cancel {
+  margin-top: 0.5rem;
+}
+
+.btn-confirm {
+  margin-top: 1.5rem;
+}
+/* Balance site */
+
+.balance-information-text{
+  text-align: center;
+  padding-top: 16px;
+}
+
+.form-data-selection {
+  max-width: 350px;
+  padding: 2rem;
+}
+
+.data-selection-box {
+  
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+
+.balance-main-div {
+  border-top: solid gray 1px;
+  padding-top: 2rem;
+}
+
+.timeperiod-label {
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .body-bgimage {
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.7) 0 100%), url("../images/background.webp");
+  }
+  #title {
+    text-align: center;
+  }
+  .big-heading{
+    font-size: 3rem;
+
+  }
+  .signin-button {
+    margin: 0;
+  }
+  .signup-button {
+    margin: 0;
+  }
+
+  .data-selection-box {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  
+  .input-data-box {
+    width: 100%;
+}
+  }
+  
+@media (max-width:767px) {
+  .button-div {
+    margin-bottom: 2rem;
+  }
+  .expenses-table {
+    border-right: none;
+  }
+
+  .nav-main {
+    padding: 2rem 0;
+  }
+}
+
+  @media (max-width: 1200px) {
+    .chart-img {
+      position: initial;
+      margin: 2rem;
+    }
+
+    .row-main {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  }

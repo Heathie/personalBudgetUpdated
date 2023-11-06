@@ -50,7 +50,7 @@ class Auth
 
   public static function getReturnToPage()
   {
-    return $_SESSION['return_to'] ?? '/';
+    return $_SESSION['return_to'] ?? '/mainsite';
   }
 
   public static function getUser()

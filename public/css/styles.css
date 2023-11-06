@@ -48,13 +48,17 @@ body {
 .brand-name {
   font-size: 2.5rem;
   font-weight: 500;
-  color: #212529;
   font-family: var(--bs-font-sans-serif);
+}
+/*
+.brand-name-color {
+  color: #212529;
 }
 
 .brand-name:hover {
   color: #212529;
 }
+*/
 
   .form-signin {
     max-width: 530px;

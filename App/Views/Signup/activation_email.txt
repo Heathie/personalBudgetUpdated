@@ -1,5 +1,5 @@
 Account activation
 
-Thank you for signing up. Please click the following link to activate your account:
+Dziękujemy za rejestrację. Kliknij link poniżej, aby aktywować konto:
 
 {{ url }}

@@ -13,6 +13,7 @@ session_start();
 $router = new Core\Router();
 
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
+$router->add('mainsite',['controller' => 'Mainsite', 'action' => 'index']);
 $router->add('admin/{controller}/{action}', ['namespace' => 'Admin']);
 $router->add('login', ['controller' => 'Login', 'action' => 'new']);
 $router->add('logout', ['controller' => 'Login', 'action' => 'destroy']);
